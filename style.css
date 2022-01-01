@@ -1,0 +1,76 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+
+.parallax1{
+	background-image: url("images/mountain1.jpg"); /*bg image*/
+
+	height: 100vh; /*set height*/
+
+	background-attachment: fixed; /*allow parallax scrolling effect*/
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	/*Scroll Text*/
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: #f1f1f1;
+	font-size: 8vh;
+}
+
+.parallax2{
+	background-image: url("images/mountain2.jpg");
+	height: 100vh;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.parallax3{
+	background-image: url("images/mountain3.jpg");
+	height: 100vh;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.parallax4{
+	background-image: url("images/mountain4.jpg");
+	height: 100vh;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.sample-content{
+	display: flex;
+	background: #f1f1f1;
+	height: 50vh;
+	font-size: 5vh;
+	color: #000;
+	justify-content: center;
+	align-items: center;
+}
+
+/* Turn off parallax scrolling for tablets and phones. Increase the pixels if needed */
+@media only screen and (max-device-width: 1366px) {
+  .parallax1 {
+    background-attachment: scroll;
+  }
+  .parallax2 {
+    background-attachment: scroll;
+  }
+  .parallax3 {
+    background-attachment: scroll;
+  }
+  .parallax4 {
+    background-attachment: scroll;
+  }
+}
